@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1 name="title">DOM</h1>
+    <p>Resultado</p>
+    <p>Aula sobre <strong>DOM</strong> no curso de JavaScript</p>
+    <div id="msg">Clique aqui</div><br>
+    <div class="js">JavaScript</div><br>
+    <script>
+        var body = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] // Seleciona o primeiro elemento com a tag (p)
+        var p2 = window.document.getElementsByTagName('p')[1] // Seleciona o segundo elemento com a tag (p)
+        window.document.write(`Está escrito: ${p1.innerText} <br><br>`)
+        window.document.write(`Está escrito: ${p2.innerHTML}`)
+        p1.style.color = 'blue'
+        body.style.background = 'violet'
+
+        /*
+        var msg = document.getElementById('msg')
+        msg.style.color = 'red'
+        msg.innerText = 'Aguarde'
+        */
+
+        var title = document.getElementsByName('title')[0]
+        title.innerText = 'DOM - Document Object Model'
+
+        var msg = document.querySelector('#msg')
+        msg.style.color = 'red'
+        msg.innerText = 'Aguarde'
+
+        const js = document.querySelector('.js')
+        js.style.color = 'yellow'
+    </script>
+</body>
+</html>

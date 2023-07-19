@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5151ff;
+}
+header{
+    text-align: center;
+}
+header h1{
+    align-items: center;
+    color: white;
+}
+section{
+    display: grid;
+    justify-content: center;
+}
+footer{
+    text-align: center;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    background-color: white;
+    width: 500px;
+    height: 470px;
+    border-radius: 10px;
+}
+.container-header{
+    margin: 25px 25px 0 25px;
+}
+.container-header input{
+    margin-bottom: 20px;
+}
+.res{
+    text-align: center;
+    margin: 0px 25px 25px 25px;
+}
+.res img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.res p{
+    text-align: center;
+    padding-bottom: 20px;
+}

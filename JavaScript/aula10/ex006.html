@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos DOM</title>
+    <style>
+      body {
+        background: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      #area {
+        background-color: red;
+        padding: 4px;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        line-height: 200px;
+        text-align: center;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="button">
+      <div id="area" onclick="clicar()">Não</div>
+    </section>
+    <script>
+        var area = document.querySelector('#area')
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        
+        function clicar(){
+            area.innerText = 'Sim'
+            area.style.background = 'green'
+        }
+        function entrar(){
+            area.innerText = 'Entrou'
+            area.style.background = 'green'
+        }
+        function sair(){
+            area.innerText = 'Saiu'
+            area.style.background = 'red'
+        }
+    </script>
+  </body>
+</html>

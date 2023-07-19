@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex001</title>
+    <style>
+        body{
+            background-color: crimson;
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = String(window.prompt('Digite seu nome: '))
+        var salario = Number(window.prompt('Digite seu salário: '))
+        document.write(`Olá <strong>${nome}!</strong> Seu nome tem ${nome.length} caracteres.<br>`) // Tamanho da string
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}!<br>`) // Letra maiúscula
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}!<br>`) // Letra minúscula
+        document.write(`Salário: ${salario.toLocaleString('pt-BR', {style: 'currency' , currency:'BRL'})}`) // Definindo o valor montário para real R$
+    </script>
+</body>
+</html>

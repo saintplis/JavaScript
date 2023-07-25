@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="txt">
+                <label for="inicio">Início: <input type="number" id="inicio" name="inicio" min="1"></label>
+                <label for="fim">Fim: <input type="number" id="fim" name="fim" min="1"></label>
+                <label for="passo">Passo: <input type="number" id="passo" name="passo" min="1"></label>
+                <input type="button" value="Contar" onclick="contar()">
+            </div>
+            <div class="res">
+                <p id="res">Preparando o resultado...</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p><a href="https://github.com/saintplis">@saint_plis</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: lightcoral;
+}
+section{
+    display: grid;
+    justify-content: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p, h1{
+    text-align: center;
+}
+input[type=number]{
+    margin: 10px;
+}
+input[type=button]{
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+.container{
+    padding: 30px;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+}
